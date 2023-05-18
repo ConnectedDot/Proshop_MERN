@@ -14,7 +14,7 @@ function App() {
       <main className="py-3">
         <Container>
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
+            <Route path="/" element={<HomeScreen />} exact />
             <Route path="/product/:id" element={<ProductScreen />} />
           </Routes>
         </Container>
@@ -23,5 +23,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
