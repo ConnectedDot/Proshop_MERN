@@ -15,7 +15,7 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className="btn btn-light my-3" to="/">
+      <Link className="btn btn-dark my-3" to="/">
         Go Back
       </Link>
       <Row>
@@ -27,6 +27,10 @@ const ProductScreen = () => {
             <ListGroup.Item>
               <h3>{product.name}</h3>
             </ListGroup.Item>
+            <ListGroup.Item>
+              <Link to={`/product/${product._id}`}>{product.name}</Link>
+            </ListGroup.Item>
+
             <ListGroup.Item>
               <Rating
                 value={product.rating}
