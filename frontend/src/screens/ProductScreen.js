@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
-// import products from '../products';
 import axios from 'axios';
 
 const ProductScreen = () => {
@@ -25,15 +24,6 @@ const ProductScreen = () => {
   if (!product) {
     return <h2>Product not found</h2>;
   }
-
-  // const ProductScreen = () => {
-  //   const params = useParams();
-  //   const { id } = params;
-  //   const product = products.find((p) => p._id === id);
-
-  //   if (!product) {
-  //     return <h2>Product not found</h2>;
-  //   }
 
   return (
     <>
