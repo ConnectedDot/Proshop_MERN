@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema(
       required: true,
     },
     email: {
-      type: Number,
+      type: String,
       required: true,
       default: true,
     },
@@ -22,10 +22,10 @@ const userSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
-const User = mongoose.model('User, userSchema');
+const User = mongoose.model('User', userSchema);
 
-export default User;
+module.exports = User;
