@@ -67,7 +67,7 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className="btn btn-light my-3" to="/">
+      <Link className="btn btn-dark my-3" to="/">
         Go Back
       </Link>
       {isLoading ? (
@@ -96,7 +96,7 @@ const ProductScreen = () => {
                 </ListGroup.Item>
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
                 <ListGroup.Item>
-                  Description: {product.description}
+                  <strong>Description:</strong> {product.description}
                 </ListGroup.Item>
               </ListGroup>
             </Col>
