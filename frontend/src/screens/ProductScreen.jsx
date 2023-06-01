@@ -23,7 +23,7 @@ import Meta from '../components/Meta';
 import { addToCart } from '../slices/cartSlice';
 
 const ProductScreen = () => {
-  const { id: productId } = useParams();
+  const { _id: productId } = useParams();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();

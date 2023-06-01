@@ -148,7 +148,7 @@ const getTopProducts = asyncHandler(async (req, res) => {
   res.json(products);
 });
 
-export {
+module.exports = {
   getProducts,
   getProductById,
   createProduct,
