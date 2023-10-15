@@ -1,13 +1,13 @@
 {
   "name": "proshopshop_mern",
   "version": "1.0.0",
-  "description": "MERN shopping cart app",
+  "description": "MERN shopping cart",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server",
+    "start": "cross-env NODE_ENV=production node server",
+    "dev": "nodemon server.js",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d"
   },
